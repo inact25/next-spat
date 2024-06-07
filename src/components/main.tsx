@@ -32,11 +32,11 @@ export default function Main(props: { splatURL?: string }) {
   const [rotation, setRotation] = useState<number>(2.8);
   const [scale, setScale] = useState<number>(1);
 
-  const handleSqueezeStart = (e) => {
+  const handleSqueezeStart = (e: any) => {
     console.log(`onSqueezeStart`, { e });
   };
 
-  const handleSqueezEnd = (e) => {
+  const handleSqueezEnd = (e: any) => {
     console.log(`onSqueezeEnd`, { e });
   };
 
